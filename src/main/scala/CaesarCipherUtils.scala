@@ -1,8 +1,8 @@
-object CipherUtils {
+object CaesarCipherUtils {
 
     def shiftAlphabet(alphabet: String, k: Int, key: String): Map[Char,Char] = {
         val (end, start) = alphabet.splitAt(alphabet.length - k)
-        val shiftedAlphabet = start + key.toArray.filter(char => !start.contains(char)).mkString("") +
+        val shiftedAlphabet = start + key.toArray.distinct.filter(char => !start.contains(char)).mkString("") +
             end.toArray.filter(char => !key.contains(char)).mkString("")
         alphabet.map(char => char -> shiftedAlphabet.charAt(alphabet.indexOf(char))).toMap
     }

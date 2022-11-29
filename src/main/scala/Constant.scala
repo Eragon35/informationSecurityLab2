@@ -5,7 +5,7 @@ object Constant {
     }
 
     object Alphabets {
-        val enAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        val enAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" // for bigrams drop Q
         val ruAlphabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
 
         def getBy(lang: Languages.Value) = lang match {

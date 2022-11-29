@@ -14,7 +14,7 @@ object ConsoleHandler {
         val k = StdIn.readInt()
         print("Введите ключевое слово: ")
         val key = StdIn.readLine().trim
-        print("Введите имя файла для чтения: ")
-        (lang, k, key.toUpperCase, ReadFromFile.read(StdIn.readLine()))
+//        print("Введите имя файла для чтения: ")
+        (lang, k, key.toUpperCase, ReadFromFile.read("input")) //StdIn.readLine()
     }
 }
