@@ -15,6 +15,6 @@ object ReadFromFile {
             case e: Throwable => Console.err.println("\tProblem with parsing file\n" + e.getMessage)
                 e.printStackTrace()
         }
-        input.toUpperCase
+        input
     }
 }
